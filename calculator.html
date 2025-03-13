@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="calculator-header">
+                <h3>Scientific Calculator</h3>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </div>
+            </div>
+            
+            <div class="display">
+                <div class="history-list" id="history-list">
+                    <!-- Calculation history items will be added here -->
+                </div>
+                <div class="history" id="history"></div>
+                <div class="input" id="input">0</div>
+            </div>
+            
+            <div class="buttons">
+                <!-- First row -->
+                <button class="btn function" data-action="deg-rad">Deg</button>
+                <button class="btn function" data-action="factorial">x!</button>
+                <button class="btn function" data-action="open-bracket">(</button>
+                <button class="btn function" data-action="close-bracket">)</button>
+                <button class="btn function" data-action="clear">AC</button>
+                
+                <!-- Second row -->
+                <button class="btn function" data-action="inverse">Inv</button>
+                <button class="btn trig" data-action="sin">sin</button>
+                <button class="btn trig" data-action="cos">cos</button>
+                <button class="btn trig" data-action="tan">tan</button>
+                <button class="btn function" data-action="percent">%</button>
+                
+                <!-- Third row -->
+                <button class="btn function" data-action="pi">π</button>
+                <button class="btn function" data-action="ln">ln</button>
+                <button class="btn function" data-action="log">log</button>
+                <button class="btn function" data-action="sqrt">√</button>
+                <button class="btn function" data-action="power">x<sup>y</sup></button>
+                
+                <!-- Fourth row -->
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                <button class="btn function" data-action="e">e</button>
+                
+                <!-- Fifth row -->
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="multiply">×</button>
+                <button class="btn function" data-action="exp">EXP</button>
+                
+                <!-- Sixth row -->
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="subtract">-</button>
+                <button class="btn function" data-action="ans">Ans</button>
+                
+                <!-- Seventh row -->
+                <button class="btn number">0</button>
+                <button class="btn number" data-action="decimal">.</button>
+                <button class="btn function" data-action="equals">=</button>
+                <button class="btn operator" data-action="add">+</button>
+            </div>
+            
+            <div class="memory-functions">
+                <button class="memory-btn" data-action="memory-clear">MC</button>
+                <button class="memory-btn" data-action="memory-recall">MR</button>
+                <button class="memory-btn" data-action="memory-add">M+</button>
+                <button class="memory-btn" data-action="memory-subtract">M-</button>
+                <button class="memory-btn" data-action="memory-store">MS</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html> 
